@@ -1,0 +1,681 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="main flex flex-col ">
+
+    <div class="flex flex-wrap space-x-4 justify-around content-center bg-gradient-to-l from-indigo-100  h-14 w-full">
+      <nav class="">
+        <div class="container flex flex-wrap  mx-auto">
+          <a href="#" class="flex items-center">
+            <img src="./svg/Group.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Netbook</span>
+          </a>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+            <div class="relative mt-3 md:hidden">
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <input type="text" id="search-navbar"
+                class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search...">
+            </div>
+            <ul
+              class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  ">
+              <li>
+                <a href="#"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  aria-current="page">Home</a>
+              </li>
+              <li class="">
+                <a href="#"
+                  class="block py-2 pl-3 pr-4 flex gap-1 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Community
+                  <img src="./svg/Vector.svg" class="" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Events</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="search flex justify-around w-1/4  items-center">
+
+        <div class="flex ">
+          <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false"
+            class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
+            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+
+            <input type="text" id="search-navbar"
+              class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search...">
+          </div>
+
+          <button data-collapse-toggle="navbar-search" type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-search" aria-expanded="false">
+            <span class="sr-only">Open menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+
+        <button type="button"
+          class="text-white hidden lg:block mt-1 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Login</button>
+      </div>
+
+
+    </div>
+
+
+    <img src="./svg/Line 1.svg" class="bg-gray-200" alt="">
+
+    <div class="intro   h-screen  items-center w-full justify-between bg-gradient-to-l from-indigo-100  flex flex-col md:flex-row ">
+      <div class="text flex flex-col w-full md:w-1/2  grid justify-center text-center align-center h-80 ">
+        <p
+          class="flex bg-blue-100 text-blue-500 bold justify-center rounded-lg flex items-center text-center h-7 w-1/2  mt-3 ">
+          Netbook Community</p>
+        <p class="bold font-medium text-3xl md:text-5xl ">Your Solutions For </p>
+        <p class="bold font-medium text-3xl md:text-5xl">Community!</p>
+        <br>
+        <p class="bold  text-1xl text-gray-600 ">More Than 2 billio people in over countries use socialbook </p>
+        <p class="bold  text-1xl text-gray-600 mt-1">to stay in touch with friends & family</p>
+        <br>
+        <div class="buttons flex flex-row h-14  justify-center gap-3 ">
+          <button
+            class="text-white    bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5  text-center mr-2 mb-2 ">About
+            more</button>
+          </button>
+          <button
+            class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5  mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Invite
+            friends</button>
+          </button>
+        </div>
+      </div>
+
+      <div class="image flex  w-screen md:w-1/2   justify-center h-full">
+        <img src="./svg/Iamge (1).svg" class="w-96" alt="">
+      </div>
+
+    </div>
+
+    <div class="about   h-screen  items-center w-full bg-white mr-2 justify-between  flex flex-col md:flex-row ">
+      <div class="text flex flex-col w-full md:w-1/2  grid justify-center text-center align-center h-80 ">
+        <p class="flex text-2xl text-blue-800 bold justify-center rounded-lg flex items-center  h-7 w-1/2 mt-2 font-sans">
+          what's Netbooks</p>
+        <p class="bold font-medium text-3xl md:text-5xl text-left font-sans ">what Join Netbook </p>
+        <p class="bold font-medium text-3xl md:text-5xl text-left font-sans">Social Network</p>
+        <br>
+        <p class="bold  text-1xl text-gray-600 text-left">Recent serveys have indicated that small buisnesses </p>
+        <p class="bold  text-1xl text-gray-600 mt-1 text-left">recognise the need they have to connect with consumer</p>
+        <br>
+        <div class=" flex flex-row md:flex-col  h-14  justify-center md:text-left  ">
+          <li class="bold text-blue-900 text-1xl font-sans"> <span class="text-black bold font-medium ">Group</span>
+          </li>
+          <li class="bold text-blue-900 text-1xl font-sans "><span class="text-black bold font-medium">Messages</span>
+          </li>
+          <li class="bold text-blue-900 text-1xl font-sans"><span class="text-black bold font-medium">Share</span></li>
+
+
+        </div>
+      </div>
+
+      <div class="image flex  w-screen md:w-1/2 gap-3  justify-around ">
+
+        <div class="flex flex-col md:flex-row gap-6">
+          <img src="./svg/contact1 (2).svg" class="" alt="">
+
+          <div class="flex flex-row md:flex-col gap-3">
+            <img src="./svg/contact1 (1).svg" class="w-1/2 md:w-auto" alt="">
+
+            <img src="./svg/contact1 (3).svg" class="w-1/2 md:w-auto" alt="">
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+    <div class="acheivment bg-white w-full bg-red  flex flex-col md:flex-row justify-center gap-10">
+
+      <div class="card1 drop-shadow-xl text-start w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-green-800 dark:border-gray-700">
+        <div class="flex justify-start ml-6 gap-3 mt-5">
+          <img src="./svg/Star.svg" class="" alt="">
+
+
+          <span class="font-bold">4.8 Rating</span>
+
+        </div>
+
+        <div class="p-4">
+          <div class="flex  gap-3  justify-start  align-center h-12 ">
+            <img src="./svg/people.svg" class="" alt="">
+            <span class="flex font-bold text-1xl items-center  text-gray-900"><span
+                class="mr-1 text-blue-800 gap-1">+836</span>Members</span>
+          </div>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+            acquisitions of 2021 so far, in reverse chronological order.</p>
+          <a href="#"
+            class="bg-white inline-flex items-center px-3 py-2 text-sm font-medium text-center text-blue-900 bg-blue-700 rounded-lg  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Join Our Commuinty
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="crad2 flex flex-col text-start w-80 max-w-sm bg-white align-center border border-gray-200 rounded-lg shadow dark:bg-green-800 dark:border-gray-700">
+        <div class="flex justify-start ml-6 gap-3 mt-5 ">
+          <img src="./svg/Trophy.svg" class="" alt="">
+
+
+          <span class="font-bold">Awaards</span>
+
+        </div>
+
+        <div class="p-4">
+          <div class="flex  gap-3  justify-start  align-center h-12 ">
+            <img src="./svg/Ellipse 14.svg" class="flex   justify-center" alt="">
+            <span class="flex font-bold text-1xl items-center  text-gray-900 gap-1">Best of<span
+                class="mr-1 text-blue-800 gap-1">2021</span>on Github</span>
+          </div>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+            acquisitions of 2021 so far, in reverse chronological order.</p>
+          <a href="#"
+            class="bg-white inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-900 bg-blue-700 rounded-lg  focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Go To Awards
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="card3 text-start  w-96 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <p
+          class="flex text-blue-600 font-medium justify-center rounded-lg flex items-center text-center h-7 w-1/2  mt-2 ">
+          Our Acvievments</p>
+
+        <a href="#">
+          <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        </a>
+        <div class="p-5">
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">We Are Connecting you, the
+              digital live</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+            acquisitions of 2021 so far, in reverse chronological order.</p>
+          <a href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Discover Me
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="features w-full flex flex-col justify-center items-center mt-10 py-5 ">
+      <div class="head flex flex-col w-screen text-center md:w-1/3 ">
+        <h1 class="text-blue-600  font-semibold">Our Community</h1>
+        <h1 class="text-3xl font-bold text-zinc-900">Commuinty Main Feature</h1>
+        <p class="text-zinc-500 font-sans text-sm mt-2">the wise man therefore always holds in these matters</p>
+        <p class="text-zinc-500 font-sans text-sm">to this principle of selection.</p>
+      </div>
+
+
+      <div class="features-cards flex flex-col md:flex-row w-full  justify-center gap-6 mt-5">
+
+        <div class="features-left w-1/3  justify-center items-center  felx flex-col gap-x-4">
+
+          <div
+            class="card1 flex flex-row w-screen  md:w-full items-center gap-3  h-40 align-center bg-white justify-center text-start rounded-lg shadow dark:bg-green-800 dark:border-gray-700 mt-4 ">
+            <img src="./svg/Icon.svg" class=" h-16 " alt="">
+            <div class="font-bold text-start w-3/5 h-20">
+              <h1 class="text-1xl font-sans text-gray-900 font-bold">Members , Friends</h1>
+              <h3 class=" text-gray-400  font-semibold">Members Friends Connection {like
+                followers}, Private Message</h3>
+            </div>
+          </div>
+
+          <div
+            class="card2 flex flex-row w-screen  md:w-full items-center gap-3  h-40 align-center bg-white justify-center text-start rounded-lg shadow dark:bg-green-800 dark:border-gray-700 mt-4">
+            <img src="./svg/Icon (1).svg" class=" h-16 " alt="">
+            <div class="font-bold text-start w-3/5 h-20">
+              <h1 class="text-1xl font-sans text-gray-900 font-bold">Forum</h1>
+              <h3 class=" text-gray-400  font-semibold">Forum is ready by BBPress.
+                Your users can make topics and talk.</h3>
+            </div>
+          </div>
+
+          <div
+            class="card3 flex flex-row w-screen  md:w-full items-center gap-3  h-40 align-center bg-white justify-center text-start rounded-lg shadow dark:bg-green-800 dark:border-gray-700 mt-4">
+            <img src="./svg/Icon (2).svg" class=" h-16 " alt="">
+            <div class="font-bold text-start w-3/5 h-20">
+              <h1 class="text-1xl font-sans text-gray-900 font-bold">List Builder</h1>
+              <h3 class=" text-gray-400  font-semibold">Members, Groups list can be modified by
+                drag & drop live builder.</h3>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="features-right w-1/3  justify-center items-center  felx flex-col gap-x-4">
+
+          <div
+            class="card1 flex flex-row  w-screen  md:w-full items-center gap-3  h-40 align-center bg-white justify-center text-start rounded-lg shadow dark:bg-green-800 dark:border-gray-700 mt-4 ">
+            <img src="./svg/Icon (3).svg" class=" h-16 " alt="">
+            <div class="font-bold text-start w-3/5 h-20">
+              <h1 class="text-1xl font-sans text-gray-900 font-bold">Group</h1>
+              <h3 class=" text-gray-400  font-semibold">Your users can create groups to let
+                other users to join and talk</h3>
+            </div>
+          </div>
+
+          <div
+            class="card2 flex flex-row w-screen  md:w-full items-center gap-3  h-40 align-center bg-white justify-center text-start rounded-lg shadow dark:bg-green-800 dark:border-gray-700 mt-4">
+            <img src="./svg/Icon (4).svg" class=" h-16 " alt="">
+            <div class="font-bold text-start w-3/5 h-20 mb-6">
+              <h1 class="text-1xl font-sans text-gray-900 font-bold">Custom Module</h1>
+              <h3 class=" text-gray-400  font-semibold">You can create Members, Groups Module.
+                We already created 3 modules. It's by drag & drop live builder.</h3>
+            </div>
+          </div>
+
+          <div
+            class="card3 flex flex-row w-screen  md:w-full items-center gap-3  h-40 align-center bg-white justify-center text-start rounded-lg shadow dark:bg-green-800 dark:border-gray-700 mt-4">
+            <img src="./svg/Icon (5).svg" class=" h-16 " alt="">
+            <div class="font-bold text-start w-3/5 h-20">
+              <h1 class="text-1xl font-sans text-gray-900 font-bold">List Scroll Effect</h1>
+              <h3 class=" text-gray-400  font-semibold">8 different scroll effects are ready.
+                You can always change by your tastes.</h3>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="ourteam w-full flex flex-col  items-center mt-10 py-5">
+      <div class=" flex flex-col w-screen text-center md:w-1/3 ">
+        <h1 class="text-blue-600  font-semibold">Valubale Team</h1>
+        <h1 class="text-3xl font-bold text-zinc-900">Our Active Members</h1>
+        <p class="text-zinc-500 font-sans text-sm mt-2">when an unknown printer took a gallery of type and meeting</p>
+        <p class="text-zinc-500 font-sans text-sm">fari scrambled it</p>
+      </div>
+
+      <div class=" flex border border-blue-100  w-screen justify-around h-12 rounded rounded-lg text-center md:w-1/4 bg-blue-100 mt-3 ">
+        <button class="text-slate-700 font-semibold text-xs w-2/5">Newist</button>
+        <button class="text-slate-700 font-semibold text-xs w-2/5">Popular</button>
+        <button class="text-slate-700 font-semibold text-white text-xs bg-sky-500 h-9 rounded mt-1 mr-1  w-4/12"> Active</button>
+      </div>
+
+      <div class="cards    flex flex-col md:flex-row w-full justify-center items-center  md:justify-around mt-10 ">
+
+        <div  class="card1 w-3/4 md:w-1/6 drop-shadow-xl py-5 items-center align-center h-60  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="relative flex flex-col items-center mt-5 ">
+             <img class="w-24 h-24 rounded-full shadow-lg z-40 -mt-2" src="./svg/Abstrack (4).svg" alt="Bonnie image" />
+              <img src="./svg/Image (9).svg" class="absolute -top-1 w-24" alt="">
+            <h5 class="mb-1 text-xl font-medium mt-5 text-gray-900 dark:text-white">Kazi Rahman</h5>
+            <span class="text-sm text-gray-500 dark:text-gray-400">@Rahman</span>
+          </div>
+        </div>
+
+        <div  class="card2 w-3/4 md:w-1/6 drop-shadow-xl py-5 items-center align-center h-60  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="relative flex flex-col items-center mt-5 ">
+             <img class="w-24 h-24 rounded-full shadow-lg z-40 -mt-2" src="./svg/Abstrack (4).svg" alt="Bonnie image" />
+              <img src="./svg/Image (6).svg" class="absolute -top-1 w-24" alt="">
+            <h5 class="mb-1 text-xl font-medium mt-5 text-gray-900 dark:text-white">Kazi Rahman</h5>
+            <span class="text-sm text-gray-500 dark:text-gray-400">@Rahman</span>
+          </div>
+        </div>
+
+        <div  class="card3 w-3/4 md:w-1/6 drop-shadow-xl py-5 items-center align-center h-60  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="relative flex flex-col items-center mt-5 ">
+             <img class="w-24 h-24 rounded-full shadow-lg z-40 -mt-2" src="./svg/Abstrack (4).svg" alt="Bonnie image" />
+              <img src="./svg/Image (11).svg" class="absolute -top-1 w-24" alt="">
+            <h5 class="mb-1 text-xl font-medium mt-5 text-gray-900 dark:text-white">Kazi Rahman</h5>
+            <span class="text-sm text-gray-500 dark:text-gray-400">@Rahman</span>
+          </div>
+        </div>
+
+
+        <div  class="card4 w-3/4 md:w-1/6 drop-shadow-xl py-5 items-center align-center h-60  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div class="relative flex flex-col items-center mt-5 ">
+             <img class="w-24 h-24 rounded-full shadow-lg z-40 -mt-2" src="./svg/Abstrack (4).svg" alt="Bonnie image" />
+              <img src="./svg/Image (10).svg" class="absolute -top-1 w-24" alt="">
+            <h5 class="mb-1 text-xl font-medium mt-5 text-gray-900 dark:text-white">Kazi Rahman</h5>
+            <span class="text-sm text-gray-500 dark:text-gray-400">@Rahman</span>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="cta rounded rounded-t-lg h-96 py-10 mt-10  items-center w-full justify-between bg-gradient-to-l from-indigo-100  flex flex-col md:flex-row ">
+      <div class="text flex flex-col w-full md:w-1/2  grid justify-center text-center align-center h-80 ">
+        <p
+          class="flex font-bold text-blue-500 bold justify-center rounded-lg flex items-center text-center h-7 w-1/2  mt-3 ">
+          Get Our Application</p>
+        <p class="bold font-bold  text-start text-3xl md:text-3xl ">You can Easily Find </p>
+        <p class="bold font-bold text-start text-3xl md:text-3xl">This App...!</p>
+        <br>
+        <p class="bold font-normal text-sm text-start text-gray-400 ">I say chap that's using lavatory chip chop </p>
+        <p class="bold font-normal text-sm text-start text-gray-400 mt-1">gosh off his smashing boot are you taking</p>
+        <p class="bold font-normal text-sm text-start text-gray-400 mt-1">the piss posh loo briliant</p>
+
+        <br>
+        <div class="buttons flex flex-row h-14  justify-center gap-3 ">
+          <button class=" flex items-center text-white  h-14    font-medium rounded-lg   text-center">
+            <img src="./svg/image 288.svg" class="" alt="">
+          </button>
+          <button class="text-gray-900 bg-white h-14   ">
+            <img src="./svg/image 289.svg" class="w-full" alt="">
+          </button>
+        </div>
+      </div>
+
+      <div class="image flex  w-1/2 items-center align-center   justify-center h-full">
+        <img src="./svg/Mask Group.svg" class="" alt="">
+      </div>
+
+    </div>
+
+    <div class="blogs flex flex-col  mt-10 justify-center items-center  ">
+      <div class="head flex flex-col  py-5 mt-10 rounded w-screen text-center md:w-1/3 ">
+        <h1 class="text-blue-500 text-sm font-semibold">Get Our Application</h1>
+        <h1 class="text-3xl font-bold text-zinc-900">Latest News</h1>
+      </div>
+
+
+      <div class="relative   w-full py-20 flex flex-col md:flex-row justify-center gap-10">
+
+        <img src="./svg/Union.svg" class="w-20 mt-50 absolute left-24 top-25 z-40" alt="">
+
+        <div class="card1 drop-shadow-xl text-start w-80 max-w-sm   ">
+          <div class="flex justify-start gap-3 mt-5">
+
+            <img src="./svg/Image (13).svg" class="" alt="">
+          </div>
+
+          <div class="p-4 flex flex-col items-center justify-center">
+            <div class="flex">
+              <img src="./svg/Line 3.svg" class="mb-8" alt="">
+              <p class="mb-3 font-semibold text-center text-1xl w-3/4   dark:text-gray-400">It Does Not Matter Hows
+                Slowly go as Long</p>
+
+            </div>
+            <a href="#" class=" inline-flex  px-3 py-2 text-sm font-semibold text-start text-gray-600 ">
+              Join Our Commuinty
+              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="card2 drop-shadow-xl text-start w-80 max-w-sm ">
+          <div class="flex justify-start gap-3 mt-5">
+            <img src="./svg/Image (14).svg" class="" alt="">
+
+
+
+          </div>
+
+          <div class="p-4 flex flex-col items-center justify-center">
+            <div class="flex">
+              <img src="./svg/Line 3.svg" class="mb-8" alt="">
+              <p class="mb-3 font-semibold text-center text-1xl w-3/4   dark:text-gray-400">Netbook Network Added New
+                Photo Filter</p>
+
+            </div>
+            <a href="#" class=" inline-flex  px-3 py-2 text-sm font-medium text-start text-blue-900 ">
+              Join Our Commuinty
+              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="card3 drop-shadow-xl text-start w-80 max-w-sm">
+          <div class="flex justify-start gap-3 mt-5">
+            <img src="./svg/Image (15).svg" class="" alt="">
+
+
+
+          </div>
+
+          <div class="p-4 flex flex-col items-center justify-center">
+            <div class="flex">
+              <img src="./svg/Line 3.svg" class="mb-8" alt="">
+              <p class="mb-3 font-semibold text-center text-1xl w-3/4   dark:text-gray-400">We Optimised Netbooks Better
+                Navigation</p>
+
+            </div>
+            <a href="#"
+              class=" inline-flex  px-3 py-2 font-semibold text-start text-gray-600 text-sm font-medium text-start text-gray-400 ">
+              Join Our Commuinty
+              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <img src="./svg/Union (1).svg" class="w-20   -ml-16 mb-10    " alt="">
+
+
+
+      </div>
+
+
+    </div>
+
+    <div class="footer w-full flex-col   bg-gray-800 ">
+
+      <div class="links flex w-full justify-between bg-gray-800 ">
+
+        <div class="left-links flex mt-2  justify-around w-2/3 ">
+          <div class="cols text-white flex flex-col  leading-9 mt-10 items-center w-1/4">
+            <h1 class="font-bold mt-1 text-lg">Home</h1>
+            <a>Home</a>
+            <a>Community</a>
+            <a>Events</a>
+            <a>Contact</a>
+
+          </div>
+
+          <div class="cols text-white flex flex-col  leading-9 mt-10 items-center w-1/4">
+            <h1  class="font-bold mt-1 text-lg">Resources</h1>
+            <a>Blog</a>
+            <a>News</a>
+            <a>Guids</a>
+            <a>Help Center</a>
+
+          </div>
+
+          <div class="cols text-white flex flex-col leading-9 mt-10 items-center w-1/4">
+            <h1  class="font-bold mt-1 text-lg">Commuinty</h1>
+            <a>NewsFeed</a>
+            <a>Profile</a>
+            <a>Friends</a>
+            <a>ConForumstact</a>
+
+          </div>
+
+          <div class="cols text-white flex flex-col  leading-9 mt-10 items-center w-1/4">
+            <h1  class="font-bold mt-1 text-lg">Main Links</h1>
+            <a>Members</a>
+            <a>Activity</a>
+            <a>Groups</a>
+            <a>Private Group</a>
+
+          </div>
+
+        </div>
+
+        <div class="right-links flex justify-center bg-gray-800 text-white items-center  w-1/3 ">
+          <div class="text flex flex-col w-3/4  text-white  bg-gray-800 justify-center text-center align-center h-80 ">
+            <p class="bold text-start font-medium text-2xl md:text-1xl text-white ">Subscribe Cirkle Newsletter </p>
+            <p class="bold text-start font-medium text-2xl md:text-1xl text-white">Newsletter </p>
+
+            <br>
+            <p class="bold  text-1xl text-start text-white  ">Subscribe to be the first one to know </p>
+            <p class="bold  text-1xl text-start text-white mt-1">about updates. Enter your email</p>
+            <br>
+            <div class="buttons flex flex-row h-14  justify-center gap-3 ">
+              <div class="flex ">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                  aria-expanded="false"
+                  class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1">
+                  <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="sr-only">Search</span>
+                </button>
+
+                <div class="relative hidden md:block">
+                  <div class="absolute inset-y-0 left-0 flex items-center pl-3 mb-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="sr-only">Search icon</span>
+                  </div>
+
+                  <input type="text" id="search-navbar"
+                    class="block w-full bg-gray-800 px-5  h-10 p-2 pl-10 text-sm text-gray-900 text-white border border-white rounded-sm bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-200 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Email Address">
+                </div>
+
+              </div>
+              <button type="button"
+                class="text-black hidden z-40 lg:block h-10 bg-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg  font-medium rounded-md text-sm px-5  text-center -ml-4  ">Subscribe</button>
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="social-links flex justify-between w-full flex-col md:flex-row   h-20  bg-gray-900">
+        <div class="logo flex justify-between w-1/2 ">
+          <div class="text flex text-center justify-center items-center mt-5 ml-10   w-1/2 h-8 text-white">Besnik Creative
+            Agency. </div>
+          <div class="logo-icon flex justify-center items-center w-1/4 ">
+            <div class="w-1/4"><img src="./svg/Group (1).svg" class="w-9 " alt=""></div>
+            <h1 class=" w-1/4 h-8 text-white font-semibold ">Netbook</h1>
+          </div>
+
+
+        </div>
+        <div class="social-icons flex  w-1/4">
+          <img  src="./svg/facebook.svg" class="w-8" alt="">
+          <img src="./svg/Twitter.svg" class="w-8" alt="">
+          <img src="./svg/instagram.svg" class="w-8" alt="">
+          <img src="./svg/Linkedin.svg" class="w-8" alt="">
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+  </div>
+
+
+
+</body>
+
+</html>
